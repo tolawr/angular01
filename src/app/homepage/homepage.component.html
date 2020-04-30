@@ -1,0 +1,22 @@
+<carousel>
+  <slide *ngFor="let slide of slides">
+    <div class="text-center bg-dark text-white">
+    <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+    <div class="carousel-caption">
+      <h1>{{slide.text}}</h1>
+    </div>
+    </div>
+  </slide>
+</carousel>
+<hr/>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-8 col-xl-9 bg-light">
+      <h1>Content</h1>
+      <app-cards></app-cards>
+    </div>
+    <div class="col-sm-12 col-md-4 col-xl-3 bg-dark text-white text-center">
+      <h2>Aside</h2>
+    </div>
+  </div>
+</div>
