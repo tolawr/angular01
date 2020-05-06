@@ -1,24 +1,12 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Navbar</a>
 
-  <div class="btn-group" dropdown>
-    <button id="button-animated" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
-      aria-controls="dropdown-animated">
-      Button dropdown <span class="caret"></span>
-    </button>
-    <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-animated">
-      <li role="menuitem">
-        <a class="dropdown-item" [routerLink]="'/'" routerLinkActive="active">Home</a>
-      </li>
-      <li role="menuitem">
-        <a class="dropdown-item" routerLink="/about" routerLinkActive="active">About</a>
-      </li>
-      <li role="menuitem">
-        <a class="dropdown-item" [routerLink]="'/contact'" routerLinkActive="active">Contact</a>
-      </li>
-      <li role="menuitem">
-        <a class="dropdown-item" [routerLink]="'/directions'" routerLinkActive="active">Directions</a>
-      </li>
-    </ul>
-  </div>
+  <ul style="list-style-type: none; color: white; display: inline-flex; padding: 5px;">
+    <li role="menuitem" *ngFor="let nav of navs">
+      <a style="color:white;" class="dropdown-item" routerLink="{{nav.route}}">
+        {{nav.name}}
+      </a>
+    </li>
+  </ul>
+
 </nav>

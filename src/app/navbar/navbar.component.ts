@@ -10,6 +10,12 @@ import { BsDropdownConfig } from 'ngx-bootstrap/dropdown';
 })
 export class NavbarComponent implements OnInit {
 
+  navs = [
+    { name: 'home', route: '/home'},
+    { name: 'about', route: '/about' },
+    { name: 'contact', route: '/contact' },
+   ];
+
   isCollapsed = true;
 
   constructor() { }

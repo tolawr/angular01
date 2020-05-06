@@ -12,6 +12,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CardsComponent } from './cards/cards.component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CardsComponent } from './cards/cards.component';
     CollapseModule.forRoot(),
     ButtonsModule.forRoot(),
     BsDropdownModule.forRoot(),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    TabsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
